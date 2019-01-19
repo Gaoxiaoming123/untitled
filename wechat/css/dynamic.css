@@ -1,0 +1,314 @@
+#dynamic{
+   /*height: 400px;*/
+    flex: 1;
+    background-color: beige;
+    overflow: scroll;
+}
+#dynamic-area{
+    height: 50px;
+}
+#search {
+    width: 98%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #E0E0E0;
+}
+
+
+
+
+
+.chat{
+    height: 60px;
+    border-bottom:   1px solid #BDBDBD ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-img{
+    width: 56px;
+    height: 56px;
+    margin-left: 4px;
+    border-radius:50%;
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.chat-main{
+    height: 56px;
+    flex: 1;
+    margin-right: 4px;
+    border-radius: 4px;
+
+}
+.chat-main-up{
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.nickname{
+    flex: 1;
+
+}
+.chat-time{
+    width: 70px;
+    text-align: right;
+    color: grey;
+    font-size: 12px;
+}
+.chat-main-down{
+    display: flex;
+    justify-content: space-between;
+
+}
+.chat-content{
+    flex: 1;
+    color: gray;
+    font-size: 14px;
+    line-height: 28px;
+}
+#scorch{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../img/small/sousuo.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+.new-friend{
+    height: 40px;
+    display: flex;
+    border-top: #BDBDBD 1px solid;
+    justify-content: space-between;
+    background-color: beige;
+
+}
+.bq{
+    flex: 1;
+    line-height: 40px;
+    margin-left:10px;
+}
+.arrows{
+    flex: 1;
+    height: 40px;
+    background-image: url(../img/small/arroow-right.svg);
+    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#interval{
+    height: 10px;
+    width: 100%;
+    background-color: #E0E0E0;
+    border-top: #BDBDBD 1px solid ;
+    border-bottom: #BDBDBD 1px solid ;
+}
+#dynamic-menus{
+    height: 40px;
+
+    display: flex;
+
+    border-bottom: #BDBDBD 1px solid  ;
+
+    justify-content: space-between;
+    background-color: beige;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#dong-tai{
+
+    height: 50px;
+
+    display: flex;
+
+    align-content: center;
+    justify-items: right;
+    background-color: beige;
+
+}
+#dong-tai-1{
+    height: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: beige;
+
+}
+.dong-tai{
+    display: flex;
+    height: 50px;
+
+   width: 33.3%;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+
+}
+.dong-tai-1{
+    width: 33.3%;
+    height: 30px;
+    display: flex;
+    margin-left:30px;
+
+}
+.dong-tai-1-1{
+    margin-left:50px;
+}
+.interval-1{
+    height: 15px;
+    width: 100%;
+    background-color: #E0E0E0;
+
+}
+.chat-space-list{
+    height: 40px;
+    border-bottom:   1px solid #BDBDBD ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ad{
+    display: flex;
+    width: 40px;
+    height: 40px;
+
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arrows-1{
+    flex: 1;
+
+    height: 40px;
+    background-image: url(../img/small/arroow-right.svg);
+    background-size:6%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.words{
+    display: flex;
+    height: 40px;
+    width: 70px;
+    align-items: center;
+}
+#coverages{
+    height: 50px;
+    width: 80%;
+
+}
+#coverages-1{
+    height: 50px;
+    width: 20%;
+    color: white;
+}
+#search-2{
+    width: 95%;
+    height: 45%;
+    border-radius: 20px;
+    background-image: url(../img/photo/fcf13933a307816da67c4bc781aed80.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#search-1{
+    width: 95%;
+    height: 30px;
+    display: flex;
+    border-radius: 20px;
+    background-color: #E0E0E0;
+}
+.scorch-1 {
+    width: 30px;
+    height: 30px;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+
+    background-image: url(../img/small/sousuo.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+}
+/*.scorch-2{*/
+
+    /*align-items: center;*/
+    /*justify-content: center;*/
+
+    /*background-image: url(../img/photo/99ce924b94ee9d1d4f94e4c151704b5.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: right;*/
+
+/*}*/
+.text-1{
+    display: flex;
+    /*width: 200px;*/
+    height: 30px;
+    align-items: center;
+    font-size: 14px;
+    color:gray ;
+}
+
+.chat-look-list{
+    height: 145px;
+
+}
+.look-img{
+    height:70px;
+    display: flex;
+}
+.look-img-from{
+    display: flex;
+    height: 70px;
+
+    width: 33.333333%;
+    border:1px solid beige ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.look-word{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #313131;
+
+}
+.look-from{
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    line-height: 17px;
+}
+.bq-1{
+    flex: 1;
+    height: 30px;
+    margin-left:10px;
+    font-size: 5px;
+    color:gray ;
+
+}
+.arrows-2{
+    flex: 1;
+    height: 30px;
+    margin-top: -6px;
+    background-image: url(../img/small/删除筛选项.svg);
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position:right;
+    margin-right: 10px;
+}
+.interval-2{
+    height: 3px;
+    width: 100%;
+    background-color: #E0E0E0;
+
+}

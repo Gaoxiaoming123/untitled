@@ -1,0 +1,17 @@
+#menus {
+    height: 50px;
+    display: flex;
+
+    justify-content: space-between;
+    background-color: beige;
+    border-top: 1px #BDBDBD solid ;
+}
+#menus div  {
+    height: 50px;
+    flex: 1;
+
+    background-size: 20px;
+    background: no-repeat center;
+}
+
+

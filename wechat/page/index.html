@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/container.css" rel="stylesheet">
+    <link href="../css/signal.css" rel="stylesheet">
+    <link href="../css/title.css" rel="stylesheet">
+    <link href="../css/dynamic.css" rel="stylesheet">
+    <link href="../css/menus.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+<div id="container">
+
+    <!-- 信号层 : start -->
+    <div id="signal" class="d2">
+
+        <div id="signal-left" class="">
+
+            <div id="signal_area" class="">
+                <div class="signal-ok "></div>
+                <div class="signal-ok"></div>
+                <div class="signal-ok"></div>
+                <div class="signal-lose"></div>
+            </div>
+            <div id="operation" class="xy-center">中国移动</div>
+            <div id="xg" class="xy-center">4G</div>
+
+
+       </div>
+        <div id="signal-center" class="xy-center">11:30</div>
+
+
+        <div id="signal-right" class="">
+
+            <div id="battery-area" class="">
+
+                <div id="battery_body">
+                    <div id="battery_core"></div>
+                </div>
+                <div id="battery_header"></div>
+
+            </div>
+
+
+        </div>
+        </div>
+    <!-- 信号层 : end -->
+
+
+    <!-- 标题层 : start -->
+    <div id="title" class="d1">
+
+
+
+    </div>
+    <!-- 标题层 : end -->
+
+
+    <!-- 内容 : start -->
+        <div id="dynamic">
+
+
+
+        </div>
+    <!-- 内容 : end -->
+
+
+    <!-- 主菜单 : start -->
+        <div id="menus">
+            <div id="chat-history" class="menu xy-center" data-normal="../img/small/消息1.svg" data-press="../img/small/消息.svg"data-url="../page/dynamic-msg.html" data-url1="../page/title-msg.html" ></div>
+            <div id="contacts" class="menu xy-center" data-normal="../img/small/我.svg" data-press="../img/small/我1.svg" data-url="../page/dynamic-contacts.html" data-url1="../page/title-contacts.html"></div>
+            <div id="chat-look" class=" menu xy-center" data-normal="../img/small/看过1.svg" data-press="../img/small/看过.svg"data-url="../page/dynamic-chat-look.html" data-url1="../page/title-chat-look.html"></div>
+            <div id="chat-space" class="menu xy-center" data-normal="../img/small/星.svg" data-press="../img/small/星1.svg"data-url="../page/dynamic-chat-space.html" data-url1="../page/title-chat-space.html"></div>
+
+
+
+
+        </div>
+    <!-- 主菜单 : end -->
+
+
+
+    </div>
+</body>
+</html>
+<script src="../js/frame/jquery.js"></script>
+<script>
+
+$(function(){
+
+
+    $("#title").load("title-msg.html")
+    $("#dynamic").load("dynamic-msg.html")
+
+
+
+  /*  $("#menus").load("menus-msg.html")
+*/
+
+  $("#contacts").click(function(){
+
+        $("#title").load("../page/title-contacts.html");
+        $("#dynamic").load("../page/dynamic-contacts.html");
+    });
+    //      $("#chat-look").click(function(){
+    //
+    //     $("#title").load("../page/title-chat-look.html");
+    //     $("#dynamic").load("..........");
+    // });
+    // $("#chat-space").click(function(){
+    //
+    //     $("#title").load("../page/title-chat-space.html");
+    //     $("#dynamic").load("..........");
+    // });
+    // $("#chat-history").click(function(){
+    //
+    //     $("#title").load("../page/tl");
+    //     // $("#dynamic").load("../page/dynamic-msg.html.html");
+    //
+    // });
+
+
+
+
+    /*  控制底部图片*/
+    $("#menus div").each(function() {
+        $(this).css('background-image' , 'url('+$(this).data("normal")+')').css('background-size' , '30%');
+        // console.log($(this).data("normal"));
+    });
+
+    //当点击每一个
+    $(".menu").click( function() {
+
+        //让所有按钮的背景  再次变为 normal 状态
+        $(".menu").each(function(){
+            $(this).css('background-image' , 'url('+$(this).data("normal")+')');
+        });
+        //让被点击的层切换为  press
+        $(this).css('background-image' , 'url('+$(this).data("press")+')');
+
+        //
+        $("#dynamic").load($(this).data("url"))
+        $("#title").load($(this).data("url1"))
+
+    });
+
+})
+
+
+</script>
